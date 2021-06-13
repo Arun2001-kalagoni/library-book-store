@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+<head>
+    <meta charset="utf-8">
+    <title> Interactive Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form class="box">
+    <h1>
+        login
+    </h1>
+<input type="text" name="" placeholder="Enter Username" id="username">
+<input type="password" name="" placeholder="Enter Password" id="password">
+<input type="button" name="" value="Login"  onclick="validate()">
+</form>
+<script>
+    function validate(){
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        if(username === "admin" && password === "12345"){
+            window.location.href="index.html";
+        }
+    }
+    //window.location.href="index.html";
+    </script>
+</body>
+</html>
